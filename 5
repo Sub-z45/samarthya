@@ -1,0 +1,13 @@
+def most_common_element(s):
+    char_counts = {}
+    for char in s:
+        if char in char_counts:
+            char_counts[char] += 1
+        else:
+            char_counts[char] = 1
+    most_common_char = max(char_counts, key=char_counts.get)
+    return most_common_char
+
+s = input("Enter a string: ")
+most_common_char = most_common_element(s)
+print("Most common element:", most_common_char)

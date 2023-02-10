@@ -1,0 +1,12 @@
+def r_string(s):
+    string = ""
+    l=len(s)
+    j=1
+    for i in range(l-1,0):
+        string[j]+=s[i]
+        j+=1
+    return string
+
+s = input("Enter a string: ")
+rstring = r_string(s)
+print("Reversed string:", rstring)
